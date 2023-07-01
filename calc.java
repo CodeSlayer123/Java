@@ -1,10 +1,9 @@
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
-
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class Calculator implements ActionListener {
+
     JFrame frame;
     JTextField textfield;
     JButton[] numberButtons = new JButton[10];
@@ -13,12 +12,12 @@ public class Calculator implements ActionListener {
     JButton decButton, equButton, delButton, clrButton;
     JPanel panel;
 
-    Font myfont = new Font("Ink Free", font.Bold, 10);
+    Font myfont = new Font("Ink Free", Font.BOLD, 10);
 
     double num1=0, num2=0, result=0;
     char operator;
 
-    public void Calcuator(){
+    Calculator(){
         frame = new JFrame("Calc");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 550);
@@ -31,9 +30,10 @@ public class Calculator implements ActionListener {
         Calculator calc = new Calculator();
     }
 
+	@Override
     public void actionPerformed(ActionEvent e){
 
     }
 
-    
+
 }
